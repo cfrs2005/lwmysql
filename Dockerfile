@@ -33,6 +33,7 @@ ENV NOTVISIBLE "in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile
 
 ADD ./start.sh /start.sh
+ADD ./mysql.sql /root/mysql.sql
 RUN chmod 755 /start.sh
 
 EXPOSE 3306
